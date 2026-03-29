@@ -7,7 +7,7 @@ function Navbar() {
         </h1>
       </div>
 
-      <ul className="flex gap-6 lg:gap-20 mx-10 font-semibold text-sm lg:text-lg  lg:font-normal items-center">
+      <ul className="hidden md:flex gap-6 lg:gap-20 mx-10 font-semibold text-sm lg:text-lg  lg:font-normal items-center">
         <li>Collections</li>
         <li>Our Story</li>
         <li>Craftsmanship</li>
