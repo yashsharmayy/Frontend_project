@@ -5,7 +5,7 @@ import HOME from './component/Home'
 const App = () => {
   return (
     <div className=''>
-      {/* <Navbar /> */}
+      <Navbar />
       <HOME />
     </div>
   )

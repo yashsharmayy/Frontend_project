@@ -20,5 +20,7 @@
 body {
   font-family: var(--font-DMsans);
   color: var(--color-charcoal69);
+  box-sizing: border-box;
   background-color: var(--color-cream09);
+  scroll-behavior: smooth;
 }
