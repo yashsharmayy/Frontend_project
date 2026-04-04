@@ -1,15 +1,19 @@
 import React from 'react'
+import Button from './Button'
 
 const HeroPage = () => {
     return (
         <div className=' h-full lg:h-screen -mt-30 w-full flex flex-col-reverse md:flex-row overflow-hidden justify-evenly '>
             <div className=' md:w-1/2 flex flex-col justify-center p-16 lg:p-24'>
-                <h2 className='text-taupe89 tracking-wider text-lg lg:text-xl my-5'>Artisan  Gold  Jewelry Since 1987</h2>
+                <h2 className='text-taupe89 font-DMsans  text-lg lg:text-xl my-5'>Artisan  Gold  Jewelry Since 1987</h2>
                 <h1 className='font-cormorant text-5xl lg:text-6xl my-8  md:my-5'>Where Gold <br />Becomes <span className='text-gold-light49'>Art</span></h1>
                 <p className='text-charcoal-soft79 text-lg my-5 md:my-2 '>Each piece in our collection is handcrafted by master artisans, transforming the finest gold into wearable works of art that tell your unique story.</p>
                 <div className='my-5 flex md:flex-row flex-col md:gap-1.5 gap:2 md:items-center items-start'>
-                    <button className='p-6 pr-20 hover:bg-gold-dark59 text-cream09 bg-charcoal69 text-left'>EXPLORE COLLECTIONS </button>
-                    <button className='mx-2 flex my-6 md:my-0 items-center justify-evenly  hover:gap-2 hover:pr-2'><h3>Our Heritage</h3><i className="fa-solid fa-arrow-right mx-1 text-sm"></i></button>
+                    <Button Name={"EXPLORE COLLECTIONS "} />
+                    <button className='mx-2 flex my-6 md:my-0 items-center justify-evenly gap-1 px-2 py-1 rounded transition-all duration-300 ease-in-out hover:gap-2 hover:pr-3'>
+                        <h3>Our Heritage</h3>
+                        <i className="fa-solid fa-arrow-right mx-1 text-sm transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
+                    </button>
                 </div>
             </div>
             <div className=' md:w-1/2  h-[60vh]  md:h-full '>

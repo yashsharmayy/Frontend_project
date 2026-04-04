@@ -1,30 +1,37 @@
 import React from 'react'
+import Button from './Button'
 
 const Section2 = () => {
     return (
-        <div className='w-full h-[150vh] flex p-20 justify-evenly items-center bg-ivory19'>
-            <div className='w-1/2'>
-                <img className='w-full h-full' src="https://plus.unsplash.com/premium_photo-1681276170291-27698ccc0a8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D" alt="" />
-            </div>
-            <div>
-                <div className='border-b '>
-                    <h3>Featured Piece</h3>
-                    <h1>Aurora Pendant</h1>
-                    <p>Inspired by the ethereal dance of northern lights, the Aurora Pendant captures the fluid movement of light through hand-hammered 22-karat gold. Each surface catches and reflects light differently, creating a mesmerizing display of golden hues.</p>
+        <div className='w-full h-full flex flex-col md:flex-row p-10 py-24 lg:p-20 overflow-hidden justify-evenly items-center bg-ivory19'>
+            <div className='relative lg:w-200 lg:mt-40 overflow-hidden'>
+                <div className='absolute z-10 left-10 top-10'>
+                    <h2 className='px-4 py-2 bg-gold-dark59  text-white'>NEW ARRIVAL</h2>
                 </div>
-                <div className='flex justify-between border-b-[0.5px]'>
-                    <ul>
+                <img className='w-full h-full transition-transform hover:scale-110 duration-700 ease-in-out object-cover object-center ' src="https://plus.unsplash.com/premium_photo-1681276170291-27698ccc0a8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D" alt="" />
+            </div>
+            <div className='md:w-1/2 lg:p-20 h-full p-10 flex flex-col md:mr-10 h-full items-center justify-evenly'>
+                <div className='border-b p-6'>
+                    <h3 className='font-DMsans lg:text-lg  text-taupe89 '>Featured Piece</h3>
+                    <h1 className='font-cormorant text-5xl lg:text-6xl my-10'>Aurora Pendant</h1>
+                    <p className='my-8 text-lg text-charcoal69'>Inspired by the ethereal dance of northern lights, the Aurora Pendant captures the fluid movement of light through hand-hammered 22-karat gold. Each surface catches and reflects light differently, creating a mesmerizing display of golden hues.</p>
+                </div>
+                <div className='flex w-full  p-4 pb-20 justify-between border-b-[0.5px]'>
+                    <ul className='text-gold-dark59 gap-4 flex flex-col'>
                         <li>Material</li>
                         <li>Weight</li>
                         <li>Chain length</li>
                     </ul>
-                    <ul>
+                    <ul className='gap-4 flex flex-col font-semibold text-charcoal-soft79 text-end'>
                         <li>22K Yellow Gold</li>
                         <li>18.5 grams</li>
                         <li>18 inches (adjustable)</li>
                     </ul>
                 </div>
-                <div></div>
+                <div className='flex flex-col w-full my-20 '>
+                    <h2 className='text-5xl font-cormorant  text-gold-dark59 my-8 mb-10'>$4,850</h2>
+                    <Button Name={"INQUIRE ABOUT THIS PIECE"} />
+                </div>
             </div>
 
         </div>
