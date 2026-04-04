@@ -10,7 +10,7 @@ const Section2 = () => {
                 </div>
                 <img className='w-full h-full transition-transform hover:scale-110 duration-700 ease-in-out object-cover object-center ' src="https://plus.unsplash.com/premium_photo-1681276170291-27698ccc0a8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D" alt="" />
             </div>
-            <div className='md:w-1/2 lg:p-20 h-full p-10 flex flex-col md:mr-10 h-full items-center justify-evenly'>
+            <div className='md:w-1/2 lg:p-20  p-10 flex flex-col md:mr-10 h-full items-center justify-evenly'>
                 <div className='border-b p-6'>
                     <h3 className='font-DMsans lg:text-lg  text-taupe89 '>Featured Piece</h3>
                     <h1 className='font-cormorant text-5xl lg:text-6xl my-10'>Aurora Pendant</h1>
