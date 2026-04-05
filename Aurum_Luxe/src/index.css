@@ -5,6 +5,7 @@
   --font-DMsans: "DM Sans", sans-serif;
   --font-playfire: "Playfair Display", serif;
 }
+
 @theme {
   --color-cream09: #fffbf5;
   --color-ivory19: #f7f3ed;
@@ -13,13 +14,14 @@
   --color-gold-light49: #d4a853;
   --color-gold-dark59: #8b6914;
   --color-charcoal69: #1c1c1c;
-  --color-charcoal-soft79: #3a3a3a;
+  --color-charcoal-soft79: #2e2e2e;
   --color-taupe89: #a69080;
   --color-taupe-light99: #c4b5a5;
 }
 body {
   font-family: var(--font-DMsans);
   color: var(--color-charcoal69);
+
   box-sizing: border-box;
   background-color: var(--color-cream09);
   scroll-behavior: smooth;

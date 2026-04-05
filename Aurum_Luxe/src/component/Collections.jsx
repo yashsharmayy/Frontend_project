@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Section3 = () => {
+const Collections = () => {
     return (
         <div className='w-full h-full p-10 py-20 lg:p-20 overflow-hidden  bg-cream09'>
             <div className='flex flex-col md:flex-row my-20 items-start md:items-center justify-between'>
@@ -66,4 +66,4 @@ const Section3 = () => {
     )
 }
 
-export default Section3
+export default Collections
