@@ -3,7 +3,15 @@ import React from 'react'
 const Storysec = () => {
     return (
         <div className=' h-full md:h-[130vh] -mt-30 w-full flex flex-col-reverse md:flex-row overflow-hidden justify-evenly '>
-            <div className='bg-charcoal69 md:w-2/5 flex flex-col justify-center p-16 lg:p-24'>
+            <div className='bg-charcoal69 text-white border  md:w-2/5 flex flex-col justify-center p-10 lg:p-24'>
+
+                <h3>OUR HERITAGE</h3>
+                <h1 className='md:text-4xl my-6 lg:text-5xl font-cormorant'>Three Generations of Golden Mastery</h1>
+                <p className=''>Founded in 1987 by master goldsmith Henri Beaumont, Maison Dorée has remained a family atelier dedicated to the art of fine gold jewelry. What began in a small workshop in the heart of the jewelry district has blossomed into a celebrated house known for impeccable craftsmanship.</p>
+                <p>Today, our third-generation artisans continue the tradition, blending time-honored techniques with contemporary design sensibilities. Every piece that leaves our workshop carries the weight of this legacy.</p>
+                <h2>Isabelle Beaumont</h2>
+                <h3>Creative Director</h3>
+
 
             </div>
             <div className=' md:w-3/5  md:h-full '>

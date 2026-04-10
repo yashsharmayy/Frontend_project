@@ -18,6 +18,7 @@
   --color-taupe89: #a69080;
   --color-taupe-light99: #c4b5a5;
 }
+
 body {
   font-family: var(--font-DMsans);
   color: var(--color-charcoal69);
