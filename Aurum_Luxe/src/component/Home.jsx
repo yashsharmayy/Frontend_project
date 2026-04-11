@@ -3,6 +3,7 @@ import HeroPage from './HeroPage'
 import Section2 from './Section2'
 import Collections from './Collections'
 import Storysec from './Storysec'
+import Carftmanship from './Carftmanship'
 
 const HOME = () => {
     return (
@@ -11,6 +12,7 @@ const HOME = () => {
             <Section2 />
             <Collections />
             <Storysec />
+            <Carftmanship />
         </div>
     )
 }

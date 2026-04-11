@@ -25,6 +25,9 @@
   .img-transform {
     @apply w-full h-full transition-transform hover:scale-110 duration-700 ease-in-out object-cover object-center;
   }
+  .bres-width {
+    @apply w-20 lg:w-25 md:m-2 lg:m-4 lg:mx-8 text-center;
+  }
 }
 body {
   font-family: var(--font-DMsans);

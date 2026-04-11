@@ -25,7 +25,7 @@ const Collections = () => {
                             src="https://images.unsplash.com/photo-1679156271456-d6068c543ee7?w=400&auto=format&fit=crop&q=60"
                             alt=""
                         />
-                        <div className=' absolute opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
+                        <div className=' absolute md:opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
                             <div className='absolute bottom-10 left-10'>
                                 <h2 className='text-cream09 font-cormorant text-3xl my-3'>Statement</h2>
                                 <p className='text-taupe-light99'>18 pieces</p>
@@ -40,7 +40,7 @@ const Collections = () => {
                             src="https://images.unsplash.com/photo-1747116404311-55f8d8944e83?w=400&auto=format&fit=crop&q=60"
                             alt=""
                         />
-                        <div className=' absolute opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
+                        <div className=' absolute md:opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
                             <div className='absolute bottom-10 left-10'>
                                 <h2 className='text-cream09 font-cormorant text-3xl my-3'>Bridal</h2>
                                 <p className='text-taupe-light99'>24 pieces</p>
@@ -56,7 +56,7 @@ const Collections = () => {
                             src="https://images.unsplash.com/photo-1588909006332-2e30f95291bc?w=400&auto=format&fit=crop&q=60"
                             alt=""
                         />
-                        <div className=' absolute opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
+                        <div className=' absolute md:opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
                             <div className='absolute bottom-10 left-10'>
                                 <h2 className='text-cream09 font-cormorant text-3xl my-3'>Men's Collection</h2>
                                 <p className='text-taupe-light99'>15 pieces</p>
@@ -70,7 +70,7 @@ const Collections = () => {
                             src="https://plus.unsplash.com/premium_photo-1674581921333-959b929a2e0a?w=400&auto=format&fit=crop&q=60"
                             alt=""
                         />
-                        <div className=' absolute opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
+                        <div className=' absolute md:opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
                             <div className='absolute bottom-10 left-10'>
                                 <h2 className='text-cream09 font-cormorant text-3xl my-3'>Heritage</h2>
                                 <p className='text-taupe-light99'>12 pieces</p>
@@ -83,7 +83,7 @@ const Collections = () => {
                             src="https://images.unsplash.com/photo-1682822749962-d4510e0467fb?w=400&auto=format&fit=crop&q=60"
                             alt=""
                         />
-                        <div className=' absolute opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
+                        <div className=' absolute md:opacity-0  group-hover:opacity-100 transition-all duration-500 inset-0 bg-linear-to-b from-[#15020204]  to-[#151414b3]'>
                             <div className='absolute bottom-10 left-10'>
                                 <h2 className='text-cream09 font-cormorant text-3xl my-3'>Everyday Elegance</h2>
                                 <p className='text-taupe-light99'>36 pieces</p>
