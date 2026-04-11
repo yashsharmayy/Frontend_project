@@ -6,6 +6,7 @@ import Storysec from './Storysec'
 import Carftmanship from './Carftmanship'
 import Testimonials from './Testimonials'
 import Contect from './Contect'
+import Footer from './Footer'
 
 const HOME = () => {
     return (
@@ -17,6 +18,7 @@ const HOME = () => {
             <Carftmanship />
             <Testimonials />
             <Contect />
+            <Footer />
         </div>
     )
 }

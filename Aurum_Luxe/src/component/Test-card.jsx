@@ -2,7 +2,7 @@ import React from 'react'
 
 const TestCard = ({ Name, role, para, img }) => {
     return (
-        <div className="relative h-full p-12 py-16 flex flex-col before:content-['“'] before:absolute before:text-6xl before:opacity-30 before:font-cormorant before:text-gold39 before:top-4 before:right-8 min-w-60 w-full bg-ivory19 m-4">            < div className='flex flex-col ' >
+        <div className="relative hover:scale-105 transition-all duration-400 ease-in-out hover:shadow-2xl h-full p-12 py-16 flex flex-col before:content-['“'] before:absolute before:text-6xl before:opacity-30 before:font-cormorant before:text-gold39 before:top-4 before:right-8 min-w-60 w-full bg-ivory19 m-4">            < div className='flex flex-col ' >
             <span className='flex text-gold39'>
                 ★
                 ★
