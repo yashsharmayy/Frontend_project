@@ -18,7 +18,14 @@
   --color-taupe89: #a69080;
   --color-taupe-light99: #c4b5a5;
 }
-
+@layer components {
+  .paraCSS {
+    @apply text-taupe-light99 text-lg my-4;
+  }
+  .img-transform {
+    @apply w-full h-full transition-transform hover:scale-110 duration-700 ease-in-out object-cover object-center;
+  }
+}
 body {
   font-family: var(--font-DMsans);
   color: var(--color-charcoal69);

@@ -8,7 +8,7 @@ const Section2 = () => {
                 <div className='absolute z-10 left-10 top-10'>
                     <h2 className='px-4 py-2 bg-gold-dark59  text-white'>NEW ARRIVAL</h2>
                 </div>
-                <img className='w-full h-full transition-transform hover:scale-110 duration-700 ease-in-out object-cover object-center ' src="https://plus.unsplash.com/premium_photo-1681276170291-27698ccc0a8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D" alt="" />
+                <img className='img-transform' src="https://plus.unsplash.com/premium_photo-1681276170291-27698ccc0a8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D" alt="" />
             </div>
             <div className='md:w-1/2 lg:p-20  p-10 flex flex-col md:mr-10 h-full items-center justify-evenly'>
                 <div className='border-b p-6'>
