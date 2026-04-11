@@ -4,6 +4,7 @@ import Section2 from './Section2'
 import Collections from './Collections'
 import Storysec from './Storysec'
 import Carftmanship from './Carftmanship'
+import Testimonials from './Testimonials'
 
 const HOME = () => {
     return (
@@ -13,6 +14,7 @@ const HOME = () => {
             <Collections />
             <Storysec />
             <Carftmanship />
+            <Testimonials />
         </div>
     )
 }
