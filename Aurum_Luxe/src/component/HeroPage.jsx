@@ -1,9 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from './Button'
 
 const HeroPage = () => {
+    const [current, setcurrent] = useState(0)
+
+    const arr = [
+        {
+            img: "https://plus.unsplash.com/premium_photo-1681276169450-4504a2442173?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D",
+            name: "Arora Diamond Pendent",
+            price: "$2,400",
+        },
+        {
+            img: "https://images.unsplash.com/photo-1716512064598-4536d086736c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8andlbGxlcnklMjByaW5nfGVufDB8fDB8fHww",
+            name: "Heritage Rings",
+            price: "$3,200",
+        },
+        {
+            img: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmVja2xhY2V8ZW58MHx8MHx8fDA%3D",
+            name: "Serpentine Collection",
+            price: "$4,850",
+        },
+    ]
+
+    let item = arr[current]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+
+            if (current < 3) {
+                setcurrent(prev => prev + 1)
+            } else {
+                setcurrent(prev => prev = 0)
+            }
+        }, 3000);
+        return () => clearInterval(interval)
+    }, [])
+
+
     return (
-        <div className=' h-full lg:h-screen -mt-30 w-full flex flex-col-reverse md:flex-row overflow-hidden justify-evenly '>
+        <div className=' h-full md:h-screen -mt-30 w-full flex flex-col-reverse md:flex-row overflow-hidden justify-evenly '>
             <div className=' md:w-1/2 flex flex-col justify-center p-16 lg:p-24'>
                 <h2 className='text-taupe89 font-DMsans  text-lg lg:text-xl my-5'>Artisan  Gold  Jewelry Since 1987</h2>
                 <h1 className='font-cormorant text-5xl lg:text-6xl my-8  md:my-5'>Where Gold <br />Becomes <span className='text-gold-light49'>Art</span></h1>
@@ -20,10 +55,10 @@ const HeroPage = () => {
                 <div className=' relative overflow-hidden h-full'>
                     <div className='absolute hidden md:block top-0 -left-15 bottom-0 bg-cream09  w-25 h-screen -skew-x-6 z-10'></div>
                     <div className='absolute bg-cream09 bottom-10 md:bottom-40 lg:bottom-20 left-20 p-4 md:p-6'>
-                        <h1 className='text-lg md:text-2xl font-cormorant text-charcoal69'>Arora Diamond Pendent</h1>
-                        <h2 className='text-gold-light49 font-semibold'>From $2,400</h2>
+                        <h1 className='text-lg md:text-2xl font-cormorant text-charcoal69'>{item.name}</h1>
+                        <h2 className='text-gold-light49 font-semibold'>From {item.price}</h2>
                     </div>
-                    <img className='w-full h-full object-cover object-center' src="https://plus.unsplash.com/premium_photo-1681276169450-4504a2442173?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8andlbGxlcnl8ZW58MHx8MHx8fDA%3D" alt="" />
+                    <img className='w-full h-full object-cover object-center' src={item.img} alt="" />
                 </div>
             </div>
 

@@ -14,7 +14,7 @@
   --color-gold-light49: #d4a853;
   --color-gold-dark59: #8b6914;
   --color-charcoal69: #1c1c1c;
-  --color-charcoal-soft79: #2e2e2e;
+  --color-charcoal-soft79: #212020;
   --color-taupe89: #a69080;
   --color-taupe-light99: #c4b5a5;
 }
@@ -27,6 +27,9 @@
   }
   .bres-width {
     @apply w-20 lg:w-25 md:m-2 lg:m-4 lg:mx-8 text-center;
+  }
+  .paracss2 {
+    @apply text-taupe89  my-2;
   }
 }
 body {

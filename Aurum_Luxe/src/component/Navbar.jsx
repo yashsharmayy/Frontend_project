@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <div className="w-full z-20 top-0 left-0 sticky bg-[#fffbf5c0] p-8 lg:px-15  flex justify-between items-center ">
+    <div className="w-full z-100 top-0 left-0 sticky bg-[#fffbf5c0] p-8 lg:px-15  flex justify-between items-center ">
       <div className="logo mx-6   flex">
         <h1 className="text-2xl lg:text-4xl font-cormorant">
           Aurum <span className="font-cormorant text-gold-light49">Luxe</span>
