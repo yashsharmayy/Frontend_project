@@ -1,9 +1,41 @@
-import React from 'react'
+import gsap from 'gsap'
+import React, { useEffect, useRef } from 'react'
 
 const Collections = () => {
+    const headref = useRef()
+    const galleryRef = useRef()
+
+
+
+    useEffect(() => {
+        gsap.from(headref.current.children, {
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: headref.current,
+                start: "top 65%",
+                // markers: true
+            }
+        })
+
+        gsap.from(galleryRef.current.children, {
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: galleryRef.current,
+                start: "top 65%",
+                // markers: true
+            }
+        })
+    }, [])
     return (
-        <div className='w-full h-full lg:mb-30  p-10 py-20 lg:p-20 overflow-hidden  bg-cream09'>
-            <div className='flex flex-col group h-full md:flex-row my-20 items-start md:items-center justify-between'>
+        <div id='collections' className='w-full h-full lg:mb-30  p-10 py-20 lg:p-20 overflow-hidden  bg-cream09'>
+            <div ref={headref} className='flex flex-col group h-full md:flex-row my-20 items-start md:items-center justify-between'>
                 <div className='flex flex-col gap-5'>
                     <h1 className='font-cormorant text-5xl text-charcoal69'>Our Collections</h1>
                     <p className='text-gold-dark59'>Discover pieces crafted for every chapter of your story</p>
@@ -16,7 +48,7 @@ const Collections = () => {
 
                 </div>
             </div>
-            <div className="gallery h-full w-full ">
+            <div ref={galleryRef} className="galleryRef h-full w-full ">
 
                 <div className='flex h-full  md:flex-row flex-col gap-8'>
                     <div className=" group md:w-1/2 h-120 relative overflow-hidden rounded-lg">

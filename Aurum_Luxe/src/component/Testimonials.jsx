@@ -1,15 +1,50 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import TestCard from './Test-card'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 
 const Testimonials = () => {
+    const contentRef = useRef()
+    const cardRef = useRef()
+
+
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        gsap.from(contentRef.current.children, {
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: contentRef.current,
+                start: "top 65%",
+                // markers: true
+            }
+        })
+
+        gsap.from(cardRef.current, {
+            y: 50,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: cardRef.current,
+                start: "top 65%",
+                // markers: true
+            }
+        })
+    }, [])
     return (
         <div className=' w-full h-full bg-cream09 py-40  p-10 text-center'>
-            <div>
+            <div ref={contentRef}>
                 <h3 className='text-taupe-light99'>CLIENT STORIES</h3>
                 <h1 className=' font-cormorant text-charcoal69 text-4xl m-4'>Tresured by Many</h1>
                 <p className='paraCSS'>What our clients say about their Maison Dorée experience</p>
             </div>
-            <div className='w-full h-full flex flex-col md:flex-row  my-16 justify-evenly items-center p-6'>
+            <div ref={cardRef} className='w-full h-full flex flex-col md:flex-row  my-16 justify-evenly items-center p-6'>
                 <TestCard
                     Name={"Catherine W."}
                     role={"Bridal Collection"}

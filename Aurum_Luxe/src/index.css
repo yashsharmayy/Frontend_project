@@ -35,8 +35,22 @@
 body {
   font-family: var(--font-DMsans);
   color: var(--color-charcoal69);
-
+  position: relative;
   box-sizing: border-box;
+  overflow-x: hidden;
   background-color: var(--color-cream09);
+}
+html {
   scroll-behavior: smooth;
+}
+
+.menubtn {
+  display: none;
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .menubtn {
+    display: block; /* or inline-block / flex depending on your layout */
+  }
 }
